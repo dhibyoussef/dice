@@ -7,9 +7,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  .container {
+.container {
     position: relative;
     width: 900px;
     height: 500px;
@@ -17,35 +17,35 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
-  }
+}
 
-  .player {
+.player {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding: 40px 20px;
     height: 100%;
-  }
+}
 
-  .player-info {
+.player-info {
     text-align: center;
-  }
+}
 
-  .player-name {
+.player-name {
     font-size: 28px;
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
-  }
+}
 
-  .player-score {
+.player-score {
     font-size: 70px;
     font-weight: bold;
     color: #f06;
-  }
+}
 
-  .current-score {
+.current-score {
     background-color: rgba(235, 48, 1, 0.5);
     border-radius: 10px;
     padding: 20px;
@@ -59,18 +59,18 @@ body {
     justify-content: center;
     margin-bottom: 50px;
     position: relative;
-  }
+}
 
-  .current-score-label {
+.current-score-label {
     font-size: 16px;
     margin-bottom: 5px;
-  }
+}
 
-  .current-score-value {
+.current-score-value {
     font-size: 40px;
-  }
+}
 
-  .dice {
+.dice {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -78,9 +78,9 @@ body {
     width: 100px;
     height: 100px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  }
+}
 
-  .btn {
+.btn {
     position: absolute;
     padding: 10px 30px;
     border-radius: 30px;
@@ -91,39 +91,49 @@ body {
     align-items: center;
     gap: 10px;
     border: none;
-  }
+}
 
-  .btn-new {
+.btn-new {
     top: 30px;
     left: 50%;
     transform: translateX(-50%);
     background-color: white;
     color: #333;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+}
 
-  .btn-roll {
+.btn-roll {
     bottom: 130px;
     left: 50%;
     transform: translateX(-50%);
     background-color: white;
     color: #333;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+}
 
-  .btn-hold {
+.btn-hold {
     bottom: 70px;
     left: 50%;
     transform: translateX(-50%);
     background-color: white;
     color: #333;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+}
 
-  .player-left {
+.player-left {
     background-color: rgba(255, 255, 255, 0.7);
-  }
+}
 
-  .player-right {
+.player-right {
     background-color: rgba(255, 255, 255, 0.3);
-  }
+}
+
+/* Added classes for active player and winner state */
+.player.active {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.player.winner {
+    background-color: #ffd700 !important;
+    transform: scale(1.05);
+}
